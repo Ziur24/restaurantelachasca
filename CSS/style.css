@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: 'Songstar';
+    src: url('../fonts/SongstarFree-qLg1.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Copenhagen';
+    src: url('../fonts/Copenhagen-z3Z0.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+#barraDeNavegacion{
+    /*font-family:'Songstar';*/
+    background-color: orange;
+    height: 5em;
+}
+.fuenteEspecial{
+    font-family:'Copenhagen';
+    font-size: 5em;
+}
