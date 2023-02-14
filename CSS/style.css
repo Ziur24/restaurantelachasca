@@ -13,14 +13,30 @@
     font-weight: normal;
 }
 
-
-
 #barraDeNavegacion{
-    /*font-family:'Songstar';*/
     background-color: orange;
     height: 5em;
 }
 .fuenteEspecial{
     font-family:'Copenhagen';
+    color: white;
     font-size: 5em;
+}
+.carta{
+    position: absolute;
+    top: 12em;
+    background-color: aqua;
+    color: white;
+}
+.prueba{
+    visibility: hidden;
+}
+#segundoAnuncio{
+    display: none;
+}
+#marcaPrincipal{
+    font-size: 9em;
+}
+.imagenMediana{
+    width: 35em;
 }
