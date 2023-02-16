@@ -13,14 +13,30 @@
     font-weight: normal;
 }
 
-#barraDeNavegacion{
-    background-color: orange;
-    height: 5em;
+
+body{
+    display: block;
 }
-.fuenteEspecial{
+.bienvenida{
+    height: 100vh;
+}
+
+.logoBienvenida{
+    color: white;
+    font-size: 5em;
+}
+
+.fuenteEspecial, .logoBienvenida{
     font-family:'Copenhagen';
     color: white;
     font-size: 5em;
+}
+
+.logoBienvenida{
+    font-size: 30em;
+}
+.letraColor{
+    color: white !important;
 }
 .carta{
     position: absolute;
@@ -28,18 +44,18 @@
     background-color: aqua;
     color: white;
 }
-.prueba{
-    visibility: hidden;
-}
 #segundoAnuncio{
     display: none;
-}
-#marcaPrincipal{
-    font-size: 9em;
 }
 .imagenMediana{
     width: 35em;
 }
 .margenTopContenedor{
     margin-top: 6em;
+}
+.video{
+   position:fixed;
+}
+.pprueba{
+position: relative;
 }

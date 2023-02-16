@@ -1,14 +1,15 @@
 
-const parrafo = document.getElementsByClassName("prueba");
+const contenedor = document.getElementById("contenedorBienvenida"); /*.addEventListener("wheel", cambioOpacidad());*/
 
-window.addEventListener('load', function(){
+/*window.addEventListener('load', function(){
     parrafoVisible(parrafo);
+});*/
+
+window.addEventListener('wheel', function(){
+  cambioOpacidad(contenedor);
 });
 
 
-function parrafoVisible(elemento1){
-    for (let i=0; i < elemento1.length; i++){
-        elemento1[i].style.visibility= "visible";
-
-    }
+function cambioOpacidad(contenedor){
+    
 }
