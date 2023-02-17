@@ -18,9 +18,9 @@ body{
 .altoContenedor{
     height: 100vh;
 }
-.anchoContenedor{
+/*.anchoContenedor{
     width: 100vw;
-}
+}*/
 
 .fuenteEspecial, .logoRestaurante{
     font-family:'Copenhagen';
@@ -56,4 +56,23 @@ position: relative;
 }
 #barraDeNavegacion{
     opacity: 0;
+}
+.paginaActual{
+    font-weight: bolder !important;
+    font-size: 1.2em !important;
+}
+
+/* Pagina Carta */
+
+#contenedorMenu{
+    top: 3.5em;
+}
+
+#imagenMenu{
+width: 25em;
+height: 17em;
+}
+
+#textoCartaPresentacion{
+    font-size: 10em;
 }

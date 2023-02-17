@@ -2,21 +2,23 @@
 const contenedor = document.getElementById("contenedorLogo"); /*.addEventListener("wheel", cambioOpacidad());*/
 const barraNavegacion = document.getElementById('barraDeNavegacion');
 const mensajeBienvenida = document.getElementById('logoRestaurante');
+const localizacion = document.location;
 
-let tamañoFuente = 30;
-let cambio;
+
 let timer;
-window.addEventListener('load', function(){
-  timer = this.setInterval(cambioOpacidad, 15)
-});
-
 let opacidadLogo=1;
 let opacidadBarraNavegacion=0;
 let etapaBinevenida = 1;
 
+window.addEventListener('load', function(){
+  timer = this.setInterval(cambioOpacidad, 15)
+});
+
+
+
 function cambioOpacidad(){
 
-  if (etapaBinevenida==1){
+  if (etapaBinevenida==1 && localizacion.pathname=="/home.html"){
     
     if (opacidadLogo>0.0){
     opacidadLogo=opacidadLogo-0.01;
@@ -36,5 +38,10 @@ function cambioOpacidad(){
       opacidadLogo=opacidadLogo+0.01;
       contenedor.style.opacity=opacidadLogo;
       }
+  }else if(localizacion.pathname=="/carta.html" || localizacion.pathname=="/contacto.html"){
+    barraNavegacion.style.opacity=1;
   }
 }
+
+
+

@@ -4,46 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante La Chasca</title>
+    <title>La Chasca</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <!-- Link Bootstrap CSS --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
     <body>
-        <video src="./images/Chimenea - 1971.mp4"; autoplay loop="loop"></video>
-            <nav class="navbar navbar-expand-md" id="barraDeNavegacion">
-                <div class="container-fluid collapse" >
-                    <!-- Boton para el colapso de la barra -->
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoBarraNavegacion" aria-controls="colapsoBarraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="navbar-collapse collapse" id="colapsoBarraNavegacion">
+        
+        <video class="video" src="./images/Chimenea.mp4" autoplay="true" muted="true" loop="true"></video>
+           
+        <nav class="navbar  navbar-expand-md navbar-light" id="barraDeNavegacion">
 
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item"><a class="nav-link" href="#"><img src="./images/telephone-fill.svg" alt="">El Restaurante</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"><img src="./images/send-fill.svg" alt="">La Carta</a></li>
-                        </ul>
+               <div class="container-fluid collapse d-flex fixed-top bg-dark" id="contenedorBarra">
 
-                        <h1 class="fuenteEspecial me-auto">La Chasca</h1>
-    
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item mx-2"><a class="nav-link" href="home.html">El Restaurante</a></li>
-                            <li class="nav-item mx-2"><a class="nav-link" href="carta.html">La Carta</a></li>
-                            <li class="nav-item mx-2"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                        </ul>
+                   <div class="container-fluid">
+                       <h1 class="fuenteEspecial text-center" id="marcaPrincipal">La Chasca</h1>
+                   </div>
+
+                   <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoBarraNavegacion" aria-controls="colapsoBarraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+
+                   <div class="container-fluid navbar-collapse collapse" id="colapsoBarraNavegacion">
+                       <ul class="navbar-nav me-auto">
+                           <li class="nav-item mx-5"><a class="nav-link letraColor " href="home.html">El Restaurante</a></li>
+                           <li class="nav-item mx-5"><a class="nav-link letraColor paginaActual" href="carta.html">La Carta</a></li>
+                           <li class="nav-item mx-5"><a class="nav-link letraColor" href="contacto.html">Contacto</a></li>
+                       </ul>
+                   </div>
+               </div>
+        </nav>
+
+        <div class="container d-flex flex-column align-items-center contenedorHome" id="contenedorMenu">
+            
+            <h1 class="fuenteEspecial" id="textoCartaPresentacion"> Nuestra carta</h1>
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col">
+                            <a class="d-flex flex-column align-items-center" href="">
+                                <img class="" id="imagenMenu" src="./images/canapes.jpg" alt="">
+                                <h2>Entrantes</h2>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <a class="d-flex flex-column align-items-center" href="">
+                                <img class="" id="imagenMenu" src="./images/aceites-jarra-cerca-comida.jpg" alt="">
+                                <h2>Sugerencias del Chef</h2>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <a class="d-flex flex-column align-items-center" class="d-flex flex-column align-items-center" href="">
+                                <img class="" id="imagenMenu" src="./images/carnes.jpg" alt="">
+                                <h2>Carnes</h2>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <a class="d-flex flex-column align-items-center" href="">
+                                <img class="" id="imagenMenu" src="./images/pescados y mariscos.jpg" alt="">
+                                <h2>Pescados y Mariscos</h2>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <a class="d-flex flex-column align-items-center" href="">
+                                <img class="" id="imagenMenu" src="./images/postres.jpg" alt="">
+                                <h2>Postres</h2>
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <a class="d-flex flex-column align-items-center" href="">
+                                <img class="" id="imagenMenu" src="./images/bebida.jpg" alt="">
+                                <h2>Bebidas</h2>
+                            </a>
+                        </div>
+
+                        
                     </div>
-                </div>
-            </nav>
-            
-            <div class="carta">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis blanditiis qui commodi ipsa voluptatum, porro soluta non velit veritatis distinctio aspernatur earum incidunt exercitationem eos facere ducimus optio nesciunt.
-                </p>
-            </div>
-            
 
+
+                </div>
+        </div>
+
+
+        <footer class="contenedorHome fixed-bottom">
+            <a href="https://www.freepik.es/foto-gratis/canapes-chupitos-langostinos-fritos-salsa-tomate-vista-lateral_7785637.htm#query=aperitivos&position=0&from_view=keyword&track=sph">Imagen de stockking</a> en Freepik
+        </footer>
+            
         <!-- Link Bootstrap JS -->
+        <script src="./main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </div>
     </body>
 </html>
