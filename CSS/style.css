@@ -12,27 +12,22 @@
     font-style: normal;
     font-weight: normal;
 }
-
-
 body{
     display: block;
 }
-.bienvenida{
+.altoContenedor{
     height: 100vh;
 }
-
-.logoBienvenida{
-    color: white;
-    font-size: 5em;
+.anchoContenedor{
+    width: 100vw;
 }
 
-.fuenteEspecial, .logoBienvenida{
+.fuenteEspecial, .logoRestaurante{
     font-family:'Copenhagen';
     color: white;
     font-size: 5em;
 }
-
-.logoBienvenida{
+.logoRestaurante{
     font-size: 30em;
 }
 .letraColor{
@@ -56,6 +51,9 @@ body{
 .video{
    position:fixed;
 }
-.pprueba{
+.contenedorHome{
 position: relative;
+}
+#barraDeNavegacion{
+    opacity: 0;
 }
