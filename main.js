@@ -4,14 +4,13 @@ const barraNavegacion = document.getElementById('barraDeNavegacion');
 const mensajeBienvenida = document.getElementById('logoRestaurante');
 const localizacion = document.location;
 
-console.log(localizacion.pathname);
-
 let timer;
 let opacidadLogo=1;
 let opacidadBarraNavegacion=0;
 let etapaBinevenida = 1;
 
 window.addEventListener('load', function(){
+  console.log("Hola, el pathname es:" + localizacion.pathname);
   timer = this.setInterval(cambioOpacidad, 15)
 });
 
