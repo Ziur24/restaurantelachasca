@@ -47,5 +47,6 @@ function particionCadena(cadena){
   let separador='/';
   let arrayParticion = cadena.split(separador);
   let ultimoComponente = arrayParticion[arrayParticion.length-1];
+  console.log(ultimoComponente);
   return ultimoComponente;
 }
