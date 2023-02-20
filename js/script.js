@@ -16,7 +16,7 @@ window.addEventListener('load', function(){
 
 function cambioOpacidad(){
   
-  if (etapaBinevenida==1 && localizacion.pathname=="/home.html"){
+  if (etapaBinevenida==1 && localizacion.pathname=="home.html"){
     
     if (opacidadLogo>0.0){
     opacidadLogo=opacidadLogo-0.01;
