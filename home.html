@@ -11,90 +11,101 @@
 </head>
     <body>
         
-        <video class="video" src="./images/Chimenea.mp4" autoplay="true" muted="true" loop="true"></video>
-           
-        <nav class="navbar  navbar-expand-md navbar-light" id="barraDeNavegacion">
+        <div class="container-fluid d-flex flex-column align-items-center">
 
-               <div class="container-fluid collapse d-flex fixed-top bg-dark" id="contenedorBarra">
+            <video class="video" src="./images/Chimenea.mp4" autoplay="true" muted="true" loop="true"></video>
 
-                   <div class="container-fluid">
-                       <h1 class="fuenteEspecial text-center" id="marcaPrincipal">La Chasca</h1>
+            <nav class="navbar  navbar-expand-md navbar-light" id="barraDeNavegacion">
+
+                <div class="container-fluid collapse d-flex fixed-top bg-dark" id="contenedorBarra">
+
+                    <div class="container-fluid">
+                        <h1 class="fuenteEspecial text-center" id="marcaPrincipal">La Chasca</h1>
+                    </div>
+
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoBarraNavegacion" aria-controls="colapsoBarraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="container-fluid navbar-collapse collapse" id="colapsoBarraNavegacion">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item mx-5"><a class="nav-link letraColor paginaActual" href="#">El Restaurante</a></li>
+                            <li class="nav-item mx-5"><a class="nav-link letraColor" href="carta.html">La Carta</a></li>
+                            <li class="nav-item mx-5"><a class="nav-link letraColor" href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row container d-flex justify-content-center">
+
+                <div class="d-flex align-items-center justify-content-center contenedorHome " id="contenedorLogo">
+                    <h1 class="logoRestaurante" id="logoRestaurante"> La Chasca</h1>
+                </div>
+
+                <div class="row contenedorHome d-flex align-items-center">
+                   <div class="col-12 col-md-11 col-lg-6 letraColor">
+                       <h2>Nuestra historia</h2>
+                       <p class="prueba" id="Hola">
+                           Todo empezó en 1990 cuando el Chef "Matute" galardonado con 10 estrella Michelin, se puso al frente de
+                           este cortijo del siglo XIIX restaurado y convertido en restaurante.<br><br>
+                           Desde entonces, el restaurante La Chasca ha sido todo un referente a nivel nacional siendo galardonado 
+                           con varios premios como uno de los mejores enclaves de restauración de nuestro país. <br><br>
+                           La Chasca es una vuelta a la tradición gastronómica más auténtica a través de sus mejores productos.<br><br>
+                           Gracias a nuestra larga experiencia en el sector de la restauración, nuestra premiada carta acompañada de una
+                            gran selección de vinos, así como nuestra ubicación escepcional, harán de su visita a La Chasca una experiencia
+                            inigualable.
+                       </p>
                    </div>
 
-                   <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoBarraNavegacion" aria-controls="colapsoBarraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
-                       <span class="navbar-toggler-icon"></span>
-                   </button>
-
-                   <div class="container-fluid navbar-collapse collapse" id="colapsoBarraNavegacion">
-                       <ul class="navbar-nav me-auto">
-                           <li class="nav-item mx-5"><a class="nav-link letraColor paginaActual" href="#">El Restaurante</a></li>
-                           <li class="nav-item mx-5"><a class="nav-link letraColor" href="carta.html">La Carta</a></li>
-                           <li class="nav-item mx-5"><a class="nav-link letraColor" href="contacto.html">Contacto</a></li>
-                       </ul>
+                   <div class="col-12 col-md-11 col-lg-6">
+                       <img class="imagenMediana img-fluid" src="./images/Cortijo1.jpeg" alt="">
                    </div>
-               </div>
-        </nav>
-        
-        <div class="container d-flex align-items-center justify-content-center altoContenedor anchoContenedor contenedorHome" id="contenedorLogo">
-            <h1 class="logoRestaurante" id="logoRestaurante"> La Chasca</h1>
-        </div>
+                </div>
 
-        </div>
-        <div class="container d-flex align-items-center margenTopContenedor contenedorHome">
-           <div class="container letraColor">
-               <h2>Nuestra historia</h2>
-               <p class="prueba" id="Hola">
-                   Todo empezó en 1990 cuando el Chef "Matute" galardonado con 10 estrella Michelin, se puso al frente de
-                   este cortijo del siglo XIIX restaurado y convertido en restaurante.<br><br>
-                   Desde entonces, el restaurante La Chasca ha sido todo un referente a nivel nacional siendo galardonado 
-                   con varios premios como uno de los mejores enclaves de restauración de nuestro país. <br><br>
-                   La Chasca es una vuelta a la tradición gastronómica más auténtica a través de sus mejores productos.<br><br>
-                   Gracias a nuestra larga experiencia en el sector de la restauración, nuestra premiada carta acompañada de una
-                    gran selección de vinos, así como nuestra ubicación escepcional, harán de su visita a La Chasca una experiencia
-                    inigualable.
-               </p>
-           </div>
-           
-           <div>
-               <img class="imagenMediana" src="./images/Cortijo1.jpeg" alt="">
-           </div>
-        </div>
+                <div class="row contenedorHome d-flex align-items-center margenTopContenedor">
 
-        <div class="container d-flex align-items-center margenTopContenedor contenedorHome">
-            <div>
-                <img class="imagenMediana" src="./images/Cortijo2.jpg" alt="">
-            </div>
-            <div class="container letraColor">
-                <h2>Un entorno único</h2>
-                <p class="prueba">
-                    Nos encontramos en el centro de una parcela de 10 hectareas de interés conservacionista, donde abundan las dehesas de Alcornocales
-                     y la actividad de multitud de fauna autoctona.<br><br>
-                    Sin duda es unos de los entornos más bonitos de la provincia de Málaga, 
-                    en plena naturaleza y muy cerca del embalse La Zúbia. <br><br>
-                    El entorno y la hubicación hace de ester lugar todo un deleite para la vista.
-                </p>
-            </div>
-        </div>
-        <div class="container d-flex align-items-center margenTopContenedor contenedorHome">
-            <div class="container letraColor">
-                <h2>Amor por la cocina tradicional</h2>
-                <p class="prueba">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste nihil debitis ratione perspiciatis aut qui molestias architecto est deleniti repellat quos nulla, vel laboriosam, quidem ullam porro quis ea aspernatur.</p>
-            </div>
-            <div>
-                <img class="imagenMediana" src="./images/Chu" alt="">
-            </div>
-        </div>
+                    <div class="col-12 col-md-11 col-lg-6 order-lg-last letraColor">
+                        <h2>Un entorno único</h2>
+                        <p class="prueba">
+                            Nos encontramos en el centro de una parcela de 10 hectareas de interés conservacionista, donde abundan las dehesas de Alcornocales
+                             y la actividad de multitud de fauna autoctona.<br><br>
+                            Sin duda es unos de los entornos más bonitos de la provincia de Málaga, 
+                            en plena naturaleza y muy cerca del embalse La Zúbia. <br><br>
+                            El entorno y la hubicación hace de ester lugar todo un deleite para la vista.
+                        </p>
+                    </div>
 
-        <div class="container d-flex align-items-center margenTopContenedor contenedorHome" >
-            <div>
-                <img class="imagenMediana" src="./images/vegetable-gff5bec1f1_640.jpg" alt="">
+                    <div class="col-12 col-md-11 col-lg-6">
+                        <img class="imagenMediana img-fluid" src="./images/Cortijo2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="row contenedorHome d-flex align-items-center margenTopContenedor">
+
+                    <div class="col-12 col-md-11 col-lg-6 letraColor">
+                        <h2>Amor por la cocina tradicional</h2>
+                        <p class="prueba">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste nihil debitis ratione perspiciatis aut qui molestias architecto est deleniti repellat quos nulla, vel laboriosam, quidem ullam porro quis ea aspernatur.</p>
+                    </div>
+
+                    <div class="col-12 col-md-11 col-lg-6">
+                        <img class="imagenMediana img-fluid" src="./images/aceites-jarra-cerca-comida.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="row contenedorHome d-flex align-items-center margenTopContenedor">
+                   
+                    <div class="col-12 col-md-11 col-lg-6 order-lg-last letraColor">
+                        <h2 class="">Nuestra apuesta por productos locales</h2>
+                        <p class="prueba">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste nihil debitis ratione perspiciatis aut qui molestias architecto est deleniti repellat quos nulla, vel laboriosam, quidem ullam porro quis ea aspernatur.</p>
+                    </div>
+
+                    <div class="col-12 col-md-11 col-lg-6">
+                        <img class="imagenMediana img-fluid" src="./images/vegetable-gff5bec1f1_640.jpg" alt="">
+                    </div>     
+                </div>
             </div>
-            <div class="container letraColor">
-            <h2 class="">Nuestra apuesta por productos locales</h2>
-            <p class="prueba">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste nihil debitis ratione perspiciatis aut qui molestias architecto est deleniti repellat quos nulla, vel laboriosam, quidem ullam porro quis ea aspernatur.</p>
-            </div>     
-        </div>
-            
+        </div>    
         <!-- Link Bootstrap JS -->
         <script src="./main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

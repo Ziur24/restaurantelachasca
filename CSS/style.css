@@ -12,23 +12,29 @@
     font-style: normal;
     font-weight: normal;
 }
-body{
-    display: block;
-}
-.altoContenedor{
-    height: 100vh;
-}
-/*.anchoContenedor{
-    width: 100vw;
+/*html{
+    font-size: calc(0.1em + 1vw)
 }*/
 
-.fuenteEspecial, .logoRestaurante{
+body{
+    margin: 0;
+    font-family: 'Copenhagen';
+
+}
+#contenedorLogo{
+    height: 100vh;
+}
+
+.fuenteEspecial{
     font-family:'Copenhagen';
     color: white;
     font-size: 5em;
 }
 .logoRestaurante{
-    font-size: 30em;
+    font-family:'Copenhagen';
+    /*font-size: 30rem;*/
+    color: white;
+    font-size: calc(1rem + 30vw)
 }
 .letraColor{
     color: white !important;
@@ -42,17 +48,20 @@ body{
 #segundoAnuncio{
     display: none;
 }
-.imagenMediana{
-    width: 35em;
-}
 .margenTopContenedor{
-    margin-top: 6em;
+    margin-top: 6em !important;
 }
 .video{
    position:fixed;
+   min-width: 100%;
+   min-height: 100%;
+   background-size: cover;
+   height: auto;
+   width: auto;
 }
 .contenedorHome{
 position: relative;
+
 }
 #barraDeNavegacion{
     opacity: 0;
