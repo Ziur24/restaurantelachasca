@@ -10,7 +10,6 @@ let opacidadBarraNavegacion=0;
 let etapaBinevenida = 1;
 
 window.addEventListener('load', function(){
-  particionCadena("hola/como/estas/loco");
   timer = this.setInterval(cambioOpacidad, 15)
 });
 
