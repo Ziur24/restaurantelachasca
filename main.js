@@ -4,6 +4,7 @@ const barraNavegacion = document.getElementById('barraDeNavegacion');
 const mensajeBienvenida = document.getElementById('logoRestaurante');
 const localizacion = document.location;
 
+alert(localizacion.pathname);
 
 let timer;
 let opacidadLogo=1;
