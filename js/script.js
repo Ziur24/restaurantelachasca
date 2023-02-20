@@ -16,7 +16,7 @@ window.addEventListener('load', function(){
 
 function cambioOpacidad(){
   
-  if (etapaBinevenida==1 && localizacion.pathname=="home.html"){
+  if (etapaBinevenida==1 && particionCadena(localizacion.pathname)=="home.html"){
     
     if (opacidadLogo>0.0){
     opacidadLogo=opacidadLogo-0.01;
@@ -38,6 +38,8 @@ function cambioOpacidad(){
       }
   }else if(particionCadena(localizacion.pathname)=="carta.html" || particionCadena(localizacion.pathname)=="contacto.html"){
     barraNavegacion.style.opacity=1;
+    console.log("hola");
+    clearInterval(timer);
   }
   
 }
@@ -46,6 +48,5 @@ function particionCadena(cadena){
   let separador='/';
   let arrayParticion = cadena.split(separador);
   let ultimoComponente = arrayParticion[arrayParticion.length-1];
-  console.log(ultimoComponente);
   return ultimoComponente;
 }
