@@ -1,45 +1,47 @@
 
 @font-face {
     font-family: 'Songstar';
-    src: url('../fonts/SongstarFree-qLg1.ttf');
+    src: url('../fonts/ActerumSignature.ttf');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Copenhagen';
-    src: url('../fonts/Copenhagen-z3Z0.ttf');
+    font-family: 'Greatday';
+    src: url('../fonts/Great\ Day.ttf');
     font-style: normal;
     font-weight: normal;
 }
-
+@font-face {
+    font-family: 'AntaraDistance';
+    src: url('../fonts/AnomanObong.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
 body{
     margin: 0;
     overflow:  hidden;
+    font-family:'AntaraDistance' !important;
+    color: white !important;
 }
 #contenedorLogo{
     height: 100vh;
 }
-
-.fuenteEspecial{
-    font-family:'Copenhagen';
-    color: white;
-    font-size: 5em;
+.fuenteBarraNavegador{
+    color: inherit !important;
+    font-size: 2em !important;
 }
-.logoRestaurante{
-    font-family:'Copenhagen';
-    /*font-size: 30rem;*/
-    color: white;
-    font-size: calc(1rem + 30vw)
+.resaltePaginaActual{
+    font-weight: bolder !important;
 }
-.letraColor{
-    color: white !important;
+.fuenteLogo{
+    font-family:'Greatday' !important;
+    font-size: 2.5em;
+    margin-top: 0.5em;
 }
-.carta{
-    position: absolute;
-    top: 12em;
-    background-color: aqua;
-    color: white;
+#logoRestaurante{
+    font-family:'Songstar';
+    font-size: calc(1rem + 25vw)
 }
 #segundoAnuncio{
     display: none;
@@ -62,26 +64,19 @@ position: relative;
 #barraDeNavegacion{
     opacity: 0;
 }
-.paginaActual{
-    font-weight: bolder !important;
-    font-size: 1.2em !important;
-}
+
 
 /* Pagina Carta */
 
-#contenedorMenu{
+#contenedorDeCuerpo{
     top: 3.5em;
 }
-
-/*#imagenMenu{
-width: 25em;
-height: 17em;
-}*/
-
-#textoCartaPresentacion{
-    font-size: 10em;
+#textoCarta{
+    font-size: calc(5rem + 3vw)
 }
-
 .enlacesEstilo{
     text-decoration: none;
+}
+#contenedorBarra{
+    height: 4.5em !important;
 }

@@ -11,89 +11,87 @@
 </head>
     <body>
         
-        <video class="video" src="./images/Chimenea.mp4" autoplay="true" muted="true" loop="true"></video>
-        
-        <header>
-            <nav class="navbar  navbar-expand-md navbar-light" id="barraDeNavegacion">
+        <div class="container-fluid d-flex flex-column align-items-center">
 
-                   <div class="container-fluid collapse d-flex fixed-top bg-dark" id="contenedorBarra">
+            <video class="video" src="./images/Chimenea.mp4" autoplay="true" muted="true" loop="true"></video>
 
-                       <div class="container-fluid">
-                           <h1 class="fuenteEspecial text-center" id="marcaPrincipal">La Chasca</h1>
-                       </div>
+            <header>
+                <nav class="navbar  navbar-expand-md bg-danger" id="barraDeNavegacion">
 
-                       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoBarraNavegacion" aria-controls="colapsoBarraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
-                           <span class="navbar-toggler-icon"></span>
-                       </button>
+                    <div class="container-fluid collapse d-flex fixed-top bg-dark" id="contenedorBarra">
 
-                       <div class="container-fluid navbar-collapse collapse" id="colapsoBarraNavegacion">
-                           <ul class="navbar-nav me-auto">
-                               <li class="nav-item mx-5"><a class="nav-link letraColor " href="index.html">El Restaurante</a></li>
-                               <li class="nav-item mx-5"><a class="nav-link letraColor paginaActual" href="carta.html">La Carta</a></li>
-                               <li class="nav-item mx-5"><a class="nav-link letraColor" href="contacto.html">Contacto</a></li>
-                           </ul>
-                       </div>
-                   </div>
-            </nav>
-        </header>
-        <div class="container d-flex flex-column align-items-center contenedorHome" id="contenedorMenu">
-            
-            <h1 class="fuenteEspecial" id="textoCartaPresentacion"> Nuestra carta</h1>
-
-                <div class="container">
-
-                    <div class="row">
-
-                        <div class="col-12 col-lg-6 col-xl-4">
-                            <a class="d-flex flex-column align-items-center enlacesEstilo" href="">
-                                <img class="img-fluid" id="imagenMenu" src="./images/canapes.jpg" alt="">
-                                <h2 class="fuenteEspecial">Entrantes</h2>
-                            </a>
+                        <div class="container-fluid d-flex justify-content-center">
+                            <h1 class="fuenteLogo">La Chasca</h1>
                         </div>
 
-                        <div class="col-12 col-lg-6 col-xl-4">
-                            <a class="d-flex flex-column align-items-center enlacesEstilo" href="">
-                                <img class="img-fluid" id="imagenMenu" src="./images/aceites-jarra-cerca-comida.jpg" alt="">
-                                <h2 class="fuenteEspecial">Sugerencias del Chef</h2>
-                            </a>
-                        </div>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoBarraNavegacion" aria-controls="colapsoBarraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                        <div class="col-12 col-lg-6 col-xl-4">
-                            <a class="d-flex flex-column align-items-center enlacesEstilo" class="d-flex flex-column align-items-center" href="">
-                                <img class="img-fluid" id="imagenMenu" src="./images/carnes.jpg" alt="">
-                                <h2 class="fuenteEspecial">Carnes</h2>
-                            </a>
+                        <div class="container-fluid navbar-collapse collapse" id="colapsoBarraNavegacion">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item mx-5"><a class="nav-link fuenteBarraNavegador " href="index.html">El Restaurante</a></li>
+                                <li class="nav-item mx-5"><a class="nav-link fuenteBarraNavegador resaltePaginaActual" href="carta.html">La Carta</a></li>
+                                <li class="nav-item mx-5"><a class="nav-link fuenteBarraNavegador" href="contacto.html">Contacto</a></li>
+                            </ul>
                         </div>
-
-                        <div class="col-12 col-lg-6 col-xl-4">
-                            <a class="d-flex flex-column align-items-center enlacesEstilo" href="">
-                                <img class="img-fluid" id="imagenMenu" src="./images/pescados y mariscos.jpg" alt="">
-                                <h2 class="fuenteEspecial">Pescados y Mariscos</h2>
-                            </a>
-                        </div>
-
-                        <div class="col-12 col-lg-6 col-xl-4">
-                            <a class="d-flex flex-column align-items-center enlacesEstilo" href="">
-                                <img class="img-fluid" id="imagenMenu" src="./images/postres.jpg" alt="">
-                                <h2 class="fuenteEspecial">Postres</h2>
-                            </a>
-                        </div>
-
-                        <div class="col-12 col-lg-6 col-xl-4">
-                            <a class="d-flex flex-column align-items-center enlacesEstilo" href="">
-                                <img class="img-fluid" id="imagenMenu" src="./images/bebida.jpg" alt="">
-                                <h2 class="fuenteEspecial">Bebidas</h2>
-                            </a>
-                        </div>
-
-                        
                     </div>
+                </nav>
+            </header>
+     
+            <div class="container d-flex flex-column align-items-center contenedorHome" id="contenedorDeCuerpo">
 
+                <h1 class="" id="textoCarta"> Nuestra carta</h1>
 
-                </div>
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <a class="d-flex flex-column align-items-center enlacesEstilo" href="">
+                                    <img class="img-fluid" id="imagenMenu" src="./images/canapes.jpg" alt="">
+                                    <h2 class="fuenteEspecial">Entrantes</h2>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <a class="d-flex flex-column align-items-center enlacesEstilo" href="">
+                                    <img class="img-fluid" id="imagenMenu" src="./images/aceites-jarra-cerca-comida.jpg" alt="">
+                                    <h2 class="fuenteEspecial">Sugerencias del Chef</h2>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <a class="d-flex flex-column align-items-center enlacesEstilo" class="d-flex flex-column align-items-center" href="">
+                                    <img class="img-fluid" id="imagenMenu" src="./images/carnes.jpg" alt="">
+                                    <h2 class="fuenteEspecial">Carnes</h2>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <a class="d-flex flex-column align-items-center enlacesEstilo" href="">
+                                    <img class="img-fluid" id="imagenMenu" src="./images/pescados y mariscos.jpg" alt="">
+                                    <h2 class="fuenteEspecial">Pescados y Mariscos</h2>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <a class="d-flex flex-column align-items-center enlacesEstilo" href="">
+                                    <img class="img-fluid" id="imagenMenu" src="./images/postres.jpg" alt="">
+                                    <h2 class="fuenteEspecial">Postres</h2>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 col-xl-4">
+                                <a class="d-flex flex-column align-items-center enlacesEstilo" href="">
+                                    <img class="img-fluid" id="imagenMenu" src="./images/bebida.jpg" alt="">
+                                    <h2 class="fuenteEspecial">Bebidas</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
-
-
         <footer class="contenedorHome fixed-bottom">
             <a href="https://www.freepik.es/foto-gratis/canapes-chupitos-langostinos-fritos-salsa-tomate-vista-lateral_7785637.htm#query=aperitivos&position=0&from_view=keyword&track=sph">Imagen de stockking</a> en Freepik
         </footer>

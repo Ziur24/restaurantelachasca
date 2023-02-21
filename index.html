@@ -15,32 +15,34 @@
 
             <video class="video" src="./images/Chimenea.mp4" autoplay="true" muted="true" loop="true"></video>
 
-            <nav class="navbar  navbar-expand-md navbar-light" id="barraDeNavegacion">
+            <header>
+                <nav class="navbar  navbar-expand-md navbar-light" id="barraDeNavegacion">
 
-                <div class="container-fluid collapse d-flex fixed-top bg-dark" id="contenedorBarra">
+                    <div class="container-fluid collapse d-flex fixed-top bg-dark" id="contenedorBarra">
 
-                    <div class="container-fluid">
-                        <h1 class="fuenteEspecial text-center" id="marcaPrincipal">La Chasca</h1>
+                        <div class="container-fluid d-flex justify-content-center">
+                            <h1 class="fuenteLogo">La Chasca</h1>
+                        </div>
+
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoBarraNavegacion" aria-controls="colapsoBarraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="container-fluid navbar-collapse collapse" id="colapsoBarraNavegacion">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item mx-5"><a class="nav-link fuenteBarraNavegador resaltePaginaActual" href="#">El Restaurante</a></li>
+                                <li class="nav-item mx-5"><a class="nav-link fuenteBarraNavegador" href="carta.html">La Carta</a></li>
+                                <li class="nav-item mx-5"><a class="nav-link fuenteBarraNavegador" href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
                     </div>
-
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#colapsoBarraNavegacion" aria-controls="colapsoBarraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="container-fluid navbar-collapse collapse" id="colapsoBarraNavegacion">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item mx-5"><a class="nav-link letraColor paginaActual" href="#">El Restaurante</a></li>
-                            <li class="nav-item mx-5"><a class="nav-link letraColor" href="carta.html">La Carta</a></li>
-                            <li class="nav-item mx-5"><a class="nav-link letraColor" href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+                </nav>
+            </header>
 
             <div class="row container d-flex justify-content-center">
 
                 <div class="d-flex align-items-center justify-content-center contenedorHome " id="contenedorLogo">
-                    <h1 class="logoRestaurante" id="logoRestaurante"> La Chasca</h1>
+                    <h1 id="logoRestaurante"> La Chasca</h1>
                 </div>
 
                 <div class="row contenedorHome d-flex align-items-center">
