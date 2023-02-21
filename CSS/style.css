@@ -12,14 +12,10 @@
     font-style: normal;
     font-weight: normal;
 }
-/*html{
-    font-size: calc(0.1em + 1vw)
-}*/
 
 body{
     margin: 0;
-    font-family: 'Copenhagen';
-
+    overflow:  hidden;
 }
 #contenedorLogo{
     height: 100vh;
@@ -77,11 +73,15 @@ position: relative;
     top: 3.5em;
 }
 
-#imagenMenu{
+/*#imagenMenu{
 width: 25em;
 height: 17em;
-}
+}*/
 
 #textoCartaPresentacion{
     font-size: 10em;
+}
+
+.enlacesEstilo{
+    text-decoration: none;
 }

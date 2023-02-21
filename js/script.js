@@ -16,7 +16,7 @@ window.addEventListener('load', function(){
 
 function cambioOpacidad(){
   
-  if (etapaBinevenida==1 && particionCadena(localizacion.pathname)=="home.html"){
+  if (etapaBinevenida==1 && particionCadena(localizacion.pathname)=="index.html"){
     
     if (opacidadLogo>0.0){
     opacidadLogo=opacidadLogo-0.01;
@@ -34,11 +34,12 @@ function cambioOpacidad(){
       opacidadLogo=opacidadLogo+0.01;
       contenedor.style.opacity=opacidadLogo;
       }else if(etapaBinevenida==2 && opacidadLogo==1){
+      document.body.style.overflow="auto";
       clearInterval(timer);
       }
   }else if(particionCadena(localizacion.pathname)=="carta.html" || particionCadena(localizacion.pathname)=="contacto.html"){
     barraNavegacion.style.opacity=1;
-    console.log("hola");
+    document.body.style.overflow="auto";
     clearInterval(timer);
   }
   
