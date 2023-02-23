@@ -7,6 +7,13 @@
 }
 
 @font-face {
+    font-family: 'Clasica';
+    src: url('../fonts/Qaz-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
     font-family: 'Greatday';
     src: url('../fonts/Great\ Day.ttf');
     font-style: normal;
@@ -21,7 +28,7 @@
 body{
     margin: 0;
     overflow:  hidden;
-    font-family:'AntaraDistance' !important;
+    font-family: Arial, Helvetica, sans-serif;
     color: white !important;
 }
 #contenedorLogo{
@@ -30,6 +37,7 @@ body{
 .fuenteBarraNavegador{
     color: inherit !important;
     font-size: 2em !important;
+    font-family: 'AntaraDistance';
 }
 .resaltePaginaActual{
     font-weight: bolder !important;
@@ -40,11 +48,12 @@ body{
     margin-top: 0.5em;
 }
 #logoRestaurante{
-    font-family:'Songstar';
+    font-family:'Songstar' !important;
     font-size: calc(1rem + 25vw)
 }
-#segundoAnuncio{
-    display: none;
+.textoHome{
+    font-size: 1em;
+    font-family:'Clasica';
 }
 .margenTopContenedor{
     margin-top: 6em !important;
@@ -75,18 +84,18 @@ position: relative;
     height: 4.5em !important;
 }
 #textoCabeceraCarta{
-    font-size: calc(5rem + 3vw)
+    font-size: calc(5rem + 3vw);
+    font-family: 'AntaraDistance';
 }
 .enlacesEstilo{
+    font-family: 'AntaraDistance';
     text-decoration: none;
     color: white;
 }
-
 .cambiaDeTamaño :hover{
     transition-property: transform;
     transition-duration: 0.3s;
     transform: scale(1.02);
-
 }
 
 /* Página de contacto*/
@@ -96,11 +105,15 @@ position: relative;
     height: 2em;
 }
 .textoContacto{
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-family: 'Clasica' !important;
 }
 #contenedorFormularioContacto{
     opacity: 90%;
 }
 #botonEnviarFormulario{
     font-size: 1.5em;
+}
+#textoFormularioCabecera{
+    font-family: 'Clasica' !important;
 }
