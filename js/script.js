@@ -1,7 +1,8 @@
 
-const contenedor = document.getElementById("contenedorLogo"); /*.addEventListener("wheel", cambioOpacidad());*/
+const contenedorLogo = document.getElementById("contenedorLogo"); /*.addEventListener("wheel", cambioOpacidad());*/
 const barraNavegacion = document.getElementById('barraDeNavegacion');
 const mensajeBienvenida = document.getElementById('logoRestaurante');
+const conjuntoSeleccionCarta = document.getElementsByClassName("div");
 const localizacion = document.location;
 
 let timer;
@@ -20,7 +21,7 @@ function cambioOpacidad(){
     
     if (opacidadLogo>0.0){
     opacidadLogo=opacidadLogo-0.01;
-    contenedor.style.opacity=opacidadLogo;
+    contenedorLogo.style.opacity=opacidadLogo;
     }else if(opacidadBarraNavegacion<1){
       opacidadBarraNavegacion=opacidadBarraNavegacion+0.01;
       barraNavegacion.style.opacity=opacidadBarraNavegacion;
@@ -32,7 +33,7 @@ function cambioOpacidad(){
     if (opacidadLogo<1){
       mensajeBienvenida.innerHTML="Bienvenidos";
       opacidadLogo=opacidadLogo+0.01;
-      contenedor.style.opacity=opacidadLogo;
+      contenedorLogo.style.opacity=opacidadLogo;
       }else if(etapaBinevenida==2 && opacidadLogo==1){
       document.body.style.overflow="auto";
       clearInterval(timer);
@@ -51,3 +52,4 @@ function particionCadena(cadena){
   let ultimoComponente = arrayParticion[arrayParticion.length-1];
   return ultimoComponente;
 }
+
