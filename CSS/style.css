@@ -88,3 +88,19 @@ position: relative;
     transform: scale(1.02);
 
 }
+
+/* Página de contacto*/
+.iconoContacto{
+    margin-right: 0.5em;
+    width: 2em;
+    height: 2em;
+}
+.textoContacto{
+    font-size: 1.5em;
+}
+#contenedorFormularioContacto{
+    opacity: 90%;
+}
+#botonEnviarFormulario{
+    font-size: 1.5em;
+}
