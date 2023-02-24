@@ -2,8 +2,7 @@
 const contenedorLogo = document.getElementById("contenedorLogo");
 const barraNavegacion = document.getElementById('barraDeNavegacion');
 const mensajeBienvenida = document.getElementById('logoRestaurante');
-const conjuntoSeleccionCarta = document.getElementsByClassName("div");
-const localizacion = document.location;
+
 
 let timer;
 let opacidadLogo=1;
@@ -12,13 +11,12 @@ let etapaBinevenida = 1;
 
 window.addEventListener('load', function(){
   timer = this.setInterval(cambioOpacidad, 15)
-  this.alert(localizacion.pathname);
 });
 
 
 function cambioOpacidad(){
   
-  if (etapaBinevenida==1 && particionCadena(localizacion.pathname)=="index.html"){
+  if (etapaBinevenida==1 && contenedorLogo){
     
     if (opacidadLogo>0.0){
     opacidadLogo=opacidadLogo-0.01;
@@ -39,7 +37,7 @@ function cambioOpacidad(){
       document.body.style.overflow="auto";
       clearInterval(timer);
       }
-  }else if(particionCadena(localizacion.pathname)=="carta.html" || particionCadena(localizacion.pathname)=="contacto.html"){
+  }else if(!contenedorLogo){ 
     barraNavegacion.style.opacity=1;
     document.body.style.overflow="auto";
     clearInterval(timer);
@@ -47,10 +45,10 @@ function cambioOpacidad(){
   
 }
 
-function particionCadena(cadena){
+/*function particionCadena(cadena){
   let separador='/';
   let arrayParticion = cadena.split(separador);
   let ultimoComponente = arrayParticion[arrayParticion.length-1];
   return ultimoComponente;
-}
+}*/
 
