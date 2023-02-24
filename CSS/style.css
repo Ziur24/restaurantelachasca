@@ -25,6 +25,7 @@
     font-style: normal;
     font-weight: normal;
 }
+
 body{
     margin: 0;
     overflow:  hidden;
@@ -78,7 +79,7 @@ position: relative;
 /* Pagina Carta */
 
 #contenedorDeCuerpo{
-    top: 3.5em;
+    margin-top: 5.5em;
 }
 #contenedorBarra{
     height: 4.5em !important;
@@ -94,6 +95,7 @@ position: relative;
 }
 .cambiaDeTamaño :hover{
     transition-property: transform;
+    transition-property: opacity;
     transition-duration: 0.3s;
     transform: scale(1.02);
 }
@@ -116,4 +118,8 @@ position: relative;
 }
 #textoFormularioCabecera{
     font-family: 'Clasica' !important;
+}
+.iconosRedes{
+    width: 25px;
+    height: 25px;
 }
