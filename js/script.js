@@ -1,5 +1,5 @@
 
-const contenedorLogo = document.getElementById("contenedorLogo"); /*.addEventListener("wheel", cambioOpacidad());*/
+const contenedorLogo = document.getElementById("contenedorLogo");
 const barraNavegacion = document.getElementById('barraDeNavegacion');
 const mensajeBienvenida = document.getElementById('logoRestaurante');
 const conjuntoSeleccionCarta = document.getElementsByClassName("div");
@@ -12,6 +12,7 @@ let etapaBinevenida = 1;
 
 window.addEventListener('load', function(){
   timer = this.setInterval(cambioOpacidad, 15)
+  this.alert(localizacion.pathname);
 });
 
 
