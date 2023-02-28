@@ -1,7 +1,7 @@
 
 const contenedorLogo = document.getElementById("contenedorLogo");
-const barraNavegacion = document.getElementById('barraDeNavegacion');
-const mensajeBienvenida = document.getElementById('logoRestaurante');
+const barraNavegacion = document.getElementById("cabeceraBarraNavegacion");
+const mensajeBienvenida = document.getElementById("logoRestaurante");
 
 
 let timer;
