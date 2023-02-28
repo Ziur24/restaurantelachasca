@@ -130,3 +130,19 @@ position: relative;
     width: 25px;
     height: 25px;
 }
+
+.contenedorCarta{
+    background-image: url("../images/papel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.textoProductosCarta{
+    font-family: 'AntaraDistance' !important;
+    font-size: calc(1rem + 2vw);
+}
+
+.imagenesMiniaturas{
+    width: 300px;
+}
