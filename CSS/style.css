@@ -77,9 +77,8 @@ body{
 position: relative;
 
 }
-#header{
+#cabeceraBarraNavegacion{
     opacity: 0;
-    z-index: 100;
 }
 
 
