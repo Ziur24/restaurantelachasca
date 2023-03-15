@@ -44,11 +44,3 @@ function cambioOpacidad(){
   }
   
 }
-
-/*function particionCadena(cadena){
-  let separador='/';
-  let arrayParticion = cadena.split(separador);
-  let ultimoComponente = arrayParticion[arrayParticion.length-1];
-  return ultimoComponente;
-}*/
-
